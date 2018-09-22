@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@keyframes bounce {
+	0% {top: 0;}
+	25% {top: -5px;}
+	50% {top: -10px;}
+	75% {top: -5px;}
+	100% {top: 0;}
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	width: 876px;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* ------------------ Header ------------------*/
+.nav-container {
+	height: 100px;
+    position: fixed;
+    background: #dddddd;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 129px 0 129px;
+	left: 0;
+	z-index:2;
+	top: 0;
+}
+nav {
+	display: inline-block;
+	padding-top: 20px;
+}
+nav span {
+	padding: 20px;
+	color: #9ba6b1;
+	transition: all .7s ease;
+	position: relative;
+	
+}
+
+nav span:hover {
+	color: black;
+	cursor: pointer;
+	animation-name: bounce;
+	animation-duration: .5s;
+}
+.logo-bg {
+	position: absolute;
+    right: 131px;
+    padding-top: 0;
+    background: url(../img/logo.png);
+    height: 36px;
+    width: 183px;
+    top: 32px;
+}
+.header-container {
+    margin-top: 150px;
+}
+.header-title-container {
+	display: inline-block;
+    position: relative;
+    vertical-align: top;
+	padding-top: 110px;
+	height: 430px;
+}
+.header-image-div {
+	height: 379px;
+	width: 379px;
+	background: url('../img/header-img.png') no-repeat;
+	display: inline-block;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+}
+.header-image {
+	position: relative;
+    float: right;
+}
+button {
+	position: absolute;
+    left: 148px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5px 25px;
+    background: none;
+	border: 1px solid black;
+	transition: all .7s ease;
+	cursor: pointer;
+}
+button:hover {
+	background: black;
+	color: white;
+}
+.header-title {
+	font-size: 42px;
+    text-align: center;
+    padding-left: 50px;
+}
+header h1 {
+	display: inline-block;
+	font-family: "Cardo", serif;
+	text-transform: uppercase;
+}
+
+/* ------------------ Main Section ------------------*/
+
+.main {
+	width: 100%;
+	border-top: 1px solid slategray;
+	border-bottom: 1px solid slategray;
+	padding-top: 50px;
+}
+.main-top-container:first-child,
+.main-bottom-container:first-child {
+	padding-right: 10px;
+}
+.main-top-container:last-child,
+.main-bottom-container:last-child  {
+	padding-left: 10px;
+	float: right;
+}
+.main-top-container {
+    width: 49%;
+	display: inline-block;
+	padding-bottom: 50px;
+}
+
+.middle-img {
+	background: url(../img/mid-page-accent.jpg) no-repeat;
+	width: 876px;
+	height: 182px;
+}
+.main-bottom-container {
+	width: 33%;
+	display: inline-block;
+	padding: 50px 0;
+}
+.main h2,
+footer h2 {
+	font-family: "Cardo", serif;
+	text-transform: uppercase;
+}
+/* ------------------ Footer ------------------*/
+footer {
+	padding: 50px 0;
+}
+footer > * {
+	padding-bottom: 20px;
+}
+footer h2 {
+	margin: 0;
+}
+#footer-copyright {
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* ------------------ Inner Page ------------------*/
+.inner-header-bg {
+	background: url(../img/shridhar-gupta-678685-unsplash.jpg) no-repeat;
+	height: 100px;
+	width: 1000px;
+}
