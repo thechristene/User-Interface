@@ -219,8 +219,27 @@ footer h2 {
 }
 
 /* ------------------ Inner Page ------------------*/
+.inner-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 .inner-header-bg {
 	background: url(../img/shridhar-gupta-678685-unsplash.jpg) no-repeat;
-	height: 100px;
+	height: 300px;
 	width: 1000px;
+	margin: 150px auto 0 auto;
+}
+.inner-main {
+	padding: 50px 0;
+}
+.inner-main ul{
+	padding-left: 100px;
+}
+.inner-main ul li {
+	list-style-type: disc;
+}
+.inner-history,
+.inner-values {
+	display: inline-block;
+	width: 45%;
 }
